@@ -123,9 +123,6 @@ function SSO_JS(init) {
             if (this.iframe == null || this.iframe == undefined) {
                 return;
             }
-            if (this.iframe.src.indexOf(event.origin) != 0){
-                return;
-            }
             var message = event.data;
             this._parseMessage(message);
         }.bind(this), false);
